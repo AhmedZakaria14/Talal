@@ -137,35 +137,35 @@ export default function Home() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <main className="min-h-screen relative font-tajawal text-[#0a1628]">
+    <main className="min-h-screen relative font-tajawal text-[#0a1628] overflow-x-hidden w-full">
       
       {/* 1. HEADER / NAVBAR (Sticky) */}
       <header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
+          isScrolled ? 'bg-white shadow-md py-2 md:py-4' : 'bg-transparent py-4 md:py-6'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <a href="#" className="flex-shrink-0 relative z-10 block">
+            <a href="#" className="flex-shrink-0 relative z-10 block ml-4">
               <Image 
                 src={isScrolled ? "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp" : "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp"} 
                 alt="مؤسسة عمر طلال للزجاج" 
-                width={260} 
-                height={80} 
-                className="h-16 sm:h-20 w-auto object-contain drop-shadow-md transition-all duration-300"
+                width={220} 
+                height={70} 
+                className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300"
                 referrerPolicy="no-referrer"
               />
             </a>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-8 xl:gap-12">
+            <nav className="hidden lg:flex items-center gap-6 xl:gap-8 mx-auto">
               {NAV_LINKS.map(link => (
                 <a 
                   key={link.label} 
                   href={link.href} 
-                  className={`text-lg font-bold hover:text-[#c9a84c] transition-colors ${
+                  className={`text-base xl:text-lg font-bold hover:text-[#c9a84c] transition-colors ${
                     isScrolled ? 'text-[#0a1628]' : 'text-white'
                   }`}
                 >
@@ -175,19 +175,19 @@ export default function Home() {
             </nav>
 
             {/* Actions */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-3 mr-4">
               <a 
                 href={`tel:${phoneNumber}`} 
-                className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-5 py-2.5 rounded-full font-bold flex items-center transition-transform hover:scale-105 shadow-lg"
+                className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-6 py-3 rounded-full font-bold flex items-center transition-transform hover:scale-105 shadow-lg whitespace-nowrap"
               >
                 <Phone className="w-5 h-5 ml-2" />
-                اتصل الآن
+                <span className="hidden xl:inline">اتصل الآن</span>
               </a>
               <a 
                 href={waLink} 
                 target="_blank" 
                 rel="noreferrer"
-                className="bg-[#25D366] hover:bg-[#1ebd5a] text-white p-2.5 rounded-full transition-transform hover:scale-110 shadow-lg"
+                className="bg-[#25D366] hover:bg-[#1ebd5a] text-white p-3 rounded-full transition-transform hover:scale-110 shadow-lg"
                 aria-label="تواصل واتساب"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -198,8 +198,9 @@ export default function Home() {
             <button 
               className={`md:hidden p-2 rounded-md ${isScrolled ? 'text-[#0a1628]' : 'text-white'}`}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="القائمة الرئيسية"
             >
-              {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              {mobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>
           </div>
         </div>
@@ -243,7 +244,7 @@ export default function Home() {
       {/* 2. HERO SECTION */}
       <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0a1628]">
         {/* Background gradient & decorative elements */}
-        <motion.div style={{ y: parallaxY }} className="absolute -top-[50%] -left-0 w-full h-[200%] bg-gradient-to-br from-[#0a1628] via-[#1e4d8c] to-[#0a1628] opacity-90 z-0"></motion.div>
+        <motion.div style={{ y: parallaxY }} className="absolute -top-[50%] left-0 w-full h-[200%] bg-gradient-to-br from-[#0a1628] via-[#1e4d8c] to-[#0a1628] opacity-90 z-0"></motion.div>
         <motion.div style={{ y: parallaxY }} className="absolute -top-[50%] right-0 w-1/2 h-[200%] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#c9a84c]/20 via-transparent to-transparent z-0"></motion.div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
@@ -489,7 +490,7 @@ export default function Home() {
       </section>
 
       {/* 8. ABOUT/TEAM SECTION */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white overflow-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
