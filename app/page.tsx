@@ -160,12 +160,12 @@ export default function Home() {
             </a>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center space-x-8 space-x-reverse">
+            <nav className="hidden lg:flex items-center gap-8 xl:gap-12">
               {NAV_LINKS.map(link => (
                 <a 
                   key={link.label} 
                   href={link.href} 
-                  className={`text-base font-semibold hover:text-[#c9a84c] transition-colors ${
+                  className={`text-lg font-bold hover:text-[#c9a84c] transition-colors ${
                     isScrolled ? 'text-[#0a1628]' : 'text-white'
                   }`}
                 >
@@ -175,7 +175,7 @@ export default function Home() {
             </nav>
 
             {/* Actions */}
-            <div className="hidden md:flex items-center space-x-4 space-x-reverse">
+            <div className="hidden md:flex items-center gap-4">
               <a 
                 href={`tel:${phoneNumber}`} 
                 className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-5 py-2.5 rounded-full font-bold flex items-center transition-transform hover:scale-105 shadow-lg"
