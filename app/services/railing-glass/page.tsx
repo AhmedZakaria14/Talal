@@ -6,7 +6,7 @@ import { Phone, CheckCircle, ShieldCheck } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب دربزين زجاج سيكوريت للسلالم والمسابح | المدينة المنورة 2025",
-    description: "تركيب دربزين زجاج سيكوريت للسلالم والشرفات والمسابح بالمدينة المنورة بأسعار منافسة وتصاميم عصرية (مخفي، ستانلس، دائري) ✅ أمان تام وضمان. اتصل: 0544315961",
+    description: "تركيب دربزين زجاج سيكوريت للسلالم والشرفات والمسابح بالمدينة المنورة بأسعار منافسة وتصاميم عصرية (مخفي، ستانلس، دائري) ✅ أمان تام وضمان. اتصل: 0558935165",
     path: "/services/railing-glass"
   });
 }
@@ -68,8 +68,8 @@ export default function RailingGlassPage() {
            <h2 className="text-3xl font-bold text-white mb-6">احمِ عائلتك بلمسة من الرقي</h2>
            <p className="text-gray-300 mb-8 text-lg">نقدم استشارات وتصاميم هندسية تناسب مساحتك وميزانيتك. اتصل بنا للحصول على معاينة مجانية.</p>
            <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a href="tel:0544315961" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-[0_0_15px_rgba(201,168,76,0.3)]">
-               <Phone className="w-6 h-6 ml-2" /> اتصل للحجز والاستفسار: 0544315961
+             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-[0_0_15px_rgba(201,168,76,0.3)]">
+               <Phone className="w-6 h-6 ml-2" /> اتصل للحجز والاستفسار: 0558935165
              </a>
            </div>
         </div>

@@ -3,7 +3,7 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import { Phone, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "تركيب زجاج سيكوريت حي العوالي | مؤسسة عمر طلال - 0544315961",
+  title: "تركيب زجاج سيكوريت حي العوالي | مؤسسة عمر طلال - 0558935165",
   description: "خبراء تركيب الزجاج السيكوريت في حي العوالي بالمدينة المنورة. نصمم وننفذ أرقى كبائن الشاور، الدربزينات الزجاجية، والمكاتب التي تناسب فخامة الحي.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/areas/al-awali",
@@ -16,7 +16,7 @@ export default function AlAwaliPage() {
     "@type": "LocalBusiness",
     "name": "مؤسسة عمر طلال - تركيب زجاج حي العوالي",
     "image": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
-    "telephone": "+966544315961",
+    "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/al-awali",
     "address": {
       "@type": "PostalAddress",
@@ -72,10 +72,10 @@ export default function AlAwaliPage() {
             <h3 className="text-2xl font-bold mb-4">احصل على تصميم حصري وعرض سعر الآن</h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">لعملائنا في العوالي معاملة خاصة وتصميمات حصرية تلبي كل توقعاتكم. اتصل بنا الآن لمعرفة المزيد.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:0544315961" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
-                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0544315961
+              <a href="tel:0558935165" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0558935165
               </a>
-              <a href="https://wa.me/966544315961" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+              <a href="https://wa.me/966558935165" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
                 <MessageCircle className="w-5 h-5 ml-2" /> تواصل واتساب
               </a>
             </div>

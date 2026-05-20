@@ -3,16 +3,14 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView, animate, AnimatePresence, useScroll, useTransform } from 'motion/react';
-import Zoom from 'react-medium-image-zoom';
-import 'react-medium-image-zoom/dist/styles.css';
 import { 
   Menu, X, Phone, MessageCircle, Shield, Wrench, Clock, CheckCircle, 
   MapPin, ChevronUp, Droplets, Building2, DoorOpen, LayoutGrid, Store, 
-  Briefcase, Waves, Settings, Check, ChevronLeft, Star, Plus
+  Briefcase, Waves, Settings, Check, ChevronLeft, ChevronRight, Star, Plus
 } from 'lucide-react';
 
-const phoneNumber = "0544315961";
-const waNumber = "966544315961";
+const phoneNumber = "0558935165";
+const waNumber = "966558935165";
 const waLink = `https://wa.me/${waNumber}`;
 const mapLink = "https://maps.app.goo.gl/SVWHydus4wrQZLkk7";
 
@@ -120,6 +118,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("الكل");
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const { scrollY } = useScroll();
   const parallaxY = useTransform(scrollY, [0, 1000], ['0%', '40%']);
 
@@ -135,6 +134,28 @@ export default function Home() {
   const filteredImages = activeTab === "الكل" 
     ? GALLERY_IMAGES 
     : GALLERY_IMAGES.filter(img => img.category === activeTab);
+
+  useEffect(() => {
+    if (lightboxIndex !== null) {
+      document.body.style.overflow = 'hidden';
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') setLightboxIndex(null);
+        if (e.key === 'ArrowRight') {
+          setLightboxIndex((prev) => (prev !== null ? (prev + 1) % filteredImages.length : null));
+        }
+        if (e.key === 'ArrowLeft') {
+          setLightboxIndex((prev) => (prev !== null ? (prev - 1 + filteredImages.length) % filteredImages.length : null));
+        }
+      };
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+        window.removeEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = '';
+      };
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [lightboxIndex, filteredImages.length]);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -469,7 +490,7 @@ export default function Home() {
 
           <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence>
-              {filteredImages.map((img) => (
+              {filteredImages.map((img, idx) => (
                 <motion.div
                   key={img.id}
                   layout
@@ -478,16 +499,15 @@ export default function Home() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
                   className="rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all relative aspect-[4/3] group bg-white cursor-zoom-in"
+                  onClick={() => setLightboxIndex(idx)}
                 >
-                  <Zoom zoomMargin={40} classDialog="custom-zoom-dialog">
-                    <img
-                      src={img.src}
-                      alt={img.category}
-                      className="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
-                      loading="lazy"
-                    />
-                  </Zoom>
-                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0a1628]/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                  <img
+                    src={img.src}
+                    alt={img.category}
+                    className="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 select-none">
                     <span className="text-white font-bold text-lg mb-1">{img.category}</span>
                     <span className="text-gray-300 text-sm flex items-center"><Plus className="w-4 h-4 ml-1" /> اضغط للتكبير</span>
                   </div>
@@ -717,6 +737,74 @@ export default function Home() {
           >
             <ChevronUp className="w-6 h-6" />
           </motion.button>
+        )}
+      </AnimatePresence>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {lightboxIndex !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4 md:p-12 select-none"
+            onClick={() => setLightboxIndex(null)}
+          >
+            {/* Close button */}
+            <button
+              onClick={(e) => { e.stopPropagation(); setLightboxIndex(null); }}
+              className="absolute top-6 right-6 text-white hover:text-[#c9a84c] bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors z-[60] cursor-pointer"
+              aria-label="إغلاق"
+            >
+              <X className="w-8 h-8" />
+            </button>
+
+            {/* Prev button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightboxIndex((prev) => (prev !== null ? (prev - 1 + filteredImages.length) % filteredImages.length : null));
+              }}
+              className="absolute left-4 md:left-8 text-white hover:text-[#c9a84c] bg-white/10 hover:bg-white/20 p-3 md:p-4 rounded-full transition-all z-[60] transform hover:scale-110 cursor-pointer"
+              aria-label="الصورة السابقة"
+            >
+              <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
+            </button>
+
+            {/* Image Container */}
+            <div className="relative max-w-5xl max-h-[80vh] w-full h-full flex flex-col items-center justify-center pointer-events-none">
+              <motion.img
+                key={lightboxIndex}
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                src={filteredImages[lightboxIndex].src}
+                alt={filteredImages[lightboxIndex].category}
+                className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl pointer-events-auto cursor-zoom-out"
+                onClick={(e) => { e.stopPropagation(); setLightboxIndex(null); }}
+              />
+              
+              {/* Category tag & index counter */}
+              <div className="absolute bottom-[-50px] left-0 right-0 text-center text-white/80 font-medium text-lg pointer-events-auto">
+                <span className="bg-black/40 px-4 py-1.5 rounded-full select-none">
+                  {filteredImages[lightboxIndex].category} ({lightboxIndex + 1} / {filteredImages.length})
+                </span>
+              </div>
+            </div>
+
+            {/* Next button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setLightboxIndex((prev) => (prev !== null ? (prev + 1) % filteredImages.length : null));
+              }}
+              className="absolute right-4 md:right-8 text-white hover:text-[#c9a84c] bg-white/10 hover:bg-white/20 p-3 md:p-4 rounded-full transition-all z-[60] transform hover:scale-110 cursor-pointer"
+              aria-label="الصورة التالية"
+            >
+              <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
+            </button>
+          </motion.div>
         )}
       </AnimatePresence>
     </main>

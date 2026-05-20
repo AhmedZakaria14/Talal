@@ -5,8 +5,8 @@ import { Phone, CheckCircle } from 'lucide-react';
 
 export function generateMetadata() {
   return generateServiceMetadata({
-    title: "تركيب شاور زجاج سيكوريت بالمدينة المنورة | أنواع وأسعار 2025 - 0544315961",
-    description: "متخصصون في تركيب شاور زجاج سيكوريت بالمدينة المنورة 🚿 فريم ليس | منزلق | ثابت | مفصلي | أسود | 10-12 ملم ✅ تركيب في نفس اليوم | ضمان 10 سنوات | اتصل: 0544315961",
+    title: "تركيب شاور زجاج سيكوريت بالمدينة المنورة | أنواع وأسعار 2025 - 0558935165",
+    description: "متخصصون في تركيب شاور زجاج سيكوريت بالمدينة المنورة 🚿 فريم ليس | منزلق | ثابت | مفصلي | أسود | 10-12 ملم ✅ تركيب في نفس اليوم | ضمان 10 سنوات | اتصل: 0558935165",
     path: "/services/shower-glass"
   });
 }
@@ -67,8 +67,8 @@ export default function ShowerGlassPage() {
            <h2 className="text-3xl font-bold text-white mb-6">اطلب معاينة وتصميم مجاني الآن</h2>
            <p className="text-gray-300 mb-8 text-lg">اتصل بنا ليصلك فني تفصيل وتركيب شاور الزجاج لأخذ المقاسات وتحديد السعر المناسب.</p>
            <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a href="tel:0544315961" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-lg">
-               <Phone className="w-6 h-6 ml-2" /> اتصل الآن: 0544315961
+             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-lg">
+               <Phone className="w-6 h-6 ml-2" /> اتصل الآن: 0558935165
              </a>
            </div>
         </div>

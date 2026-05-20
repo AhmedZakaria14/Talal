@@ -6,7 +6,7 @@ import { Phone, CheckCircle, DoorOpen } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب أبواب زجاج سيكوريت بالمدينة المنورة | أوتوماتيكية ومنزلقة 2025",
-    description: "تركيب أبواب زجاج سيكوريت أوتوماتيكية ومنزلقة بالمدينة المنورة 🚪 موتورات ياباني وإيطالي | صيانة 24 ساعة | إكسسوارات ألماني وتركي أصلي ✅ اتصل: 0544315961",
+    description: "تركيب أبواب زجاج سيكوريت أوتوماتيكية ومنزلقة بالمدينة المنورة 🚪 موتورات ياباني وإيطالي | صيانة 24 ساعة | إكسسوارات ألماني وتركي أصلي ✅ اتصل: 0558935165",
     path: "/services/doors-glass"
   });
 }
@@ -68,8 +68,8 @@ export default function DoorsGlassPage() {
            <h2 className="text-3xl font-bold text-white mb-6">استمتع بتجربة دخول مميزة لمكانك</h2>
            <p className="text-gray-300 mb-8 text-lg">لا تتردد في طلب استشارتنا المجانية لتحديد النوع والحجم الأنسب من الأبواب لمساحتك التجارية أو السكنية.</p>
            <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a href="tel:0544315961" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-[0_0_15px_rgba(201,168,76,0.3)]">
-               <Phone className="w-6 h-6 ml-2" /> اطلب الخدمة الآن: 0544315961
+             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-[0_0_15px_rgba(201,168,76,0.3)]">
+               <Phone className="w-6 h-6 ml-2" /> اطلب الخدمة الآن: 0558935165
              </a>
            </div>
         </div>

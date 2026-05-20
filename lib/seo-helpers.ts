@@ -85,7 +85,7 @@ export function generateServiceSchema({
     provider: {
       '@type': 'LocalBusiness',
       name: 'مؤسسة عمر طلال لجميع أعمال الزجاج بالمدينة المنورة',
-      telephone: '+966544315961',
+      telephone: '+966558935165',
     },
     areaServed: {
       '@type': 'City',

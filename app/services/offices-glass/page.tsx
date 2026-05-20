@@ -6,7 +6,7 @@ import { Phone, CheckCircle, Briefcase } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب زجاج وقواطع مكاتب بالمدينة المنورة | زجاج ذكي وبارتشن 2025",
-    description: "تركيب قواطع زجاج مكاتب (بارتشن) وإدارة مساحات العمل بالمدينة المنورة 💼 زجاج سمارت (ذكي) | زجاج مصنفر | عازل للصوت ✅ تصاميم مودرن. اتصل الآن: 0544315961",
+    description: "تركيب قواطع زجاج مكاتب (بارتشن) وإدارة مساحات العمل بالمدينة المنورة 💼 زجاج سمارت (ذكي) | زجاج مصنفر | عازل للصوت ✅ تصاميم مودرن. اتصل الآن: 0558935165",
     path: "/services/offices-glass"
   });
 }
@@ -70,8 +70,8 @@ export default function OfficesGlassPage() {
              نقدم لك أفضل التصاميم العصرية لمكتبك مع ضمان جودة التنفيذ وسرعة العمل حتى لا يتعطل نشاطك التجاري.
            </p>
            <div className="flex justify-center">
-             <a href="tel:0544315961" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
-               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> تواصل لرفع مقاسات مكتبك مجاناً: 0544315961
+             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
+               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> تواصل لرفع مقاسات مكتبك مجاناً: 0558935165
              </a>
            </div>
         </div>

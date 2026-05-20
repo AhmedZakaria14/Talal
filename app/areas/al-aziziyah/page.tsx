@@ -3,8 +3,8 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import { Phone, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "تركيب زجاج سيكوريت حي العزيزية | مؤسسة عمر طلال - 0544315961",
-  description: "أفضل شركة تركيب زجاج سيكوريت في حي العزيزية بالمدينة المنورة. تفصيل وتركيب شاورات، واجهات تجارية، ابواب، مكاتب بأفضل الأسعار وأعلى جودة. تواصل معنا 0544315961.",
+  title: "تركيب زجاج سيكوريت حي العزيزية | مؤسسة عمر طلال - 0558935165",
+  description: "أفضل شركة تركيب زجاج سيكوريت في حي العزيزية بالمدينة المنورة. تفصيل وتركيب شاورات، واجهات تجارية، ابواب، مكاتب بأفضل الأسعار وأعلى جودة. تواصل معنا 0558935165.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/areas/al-aziziyah",
   }
@@ -16,7 +16,7 @@ export default function AlAziziyahPage() {
     "@type": "LocalBusiness",
     "name": "مؤسسة عمر طلال - تركيب زجاج حي العزيزية",
     "image": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
-    "telephone": "+966544315961",
+    "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/al-aziziyah",
     "address": {
       "@type": "PostalAddress",
@@ -46,7 +46,7 @@ export default function AlAziziyahPage() {
               نحن نغطي كافة شوارع ومخططات حي العزيزية، سواء كنت في حاجة إلى تركيب واجهات زجاجية لمحلك التجاري المتواجد على الشارع العام، أو ترغب في تركيب شاور زجاجي فخم لفيلتك الخاصة داخل الحي، فإن فريقنا من الفنيين المتخصصين على أتم الاستعداد.
             </p>
             <p>
-              نعتمد في جميع أعمالنا في حي العزيزية على أحدث تقنيات القياس بـ "الليزر" للوصول إلى دقة متناهية، كما نستخدم سماكات متعددة تناسب متطلبات العميل من ١٠ ملم إلى ١٢ ملم وما فوق، مع توفير أفخر أنواع الإكسسوارات الاستانلس ستيل التركية والألمانية المقاومة للصدأ وعوامل الجو.
+              نعتمد في جميع أعمالنا في حي العزيزية على أحدث تقنيات القياس بالليزر للوصول إلى دقة متناهية، كما نستخدم سماكات متعددة تناسب متطلبات العميل من ١٠ ملم إلى ١٢ ملم وما فوق، مع توفير أفخر أنواع الإكسسوارات الاستانلس ستيل التركية والألمانية المقاومة للصدأ وعوامل الجو.
             </p>
           </div>
 
@@ -72,10 +72,10 @@ export default function AlAziziyahPage() {
             <h3 className="text-2xl font-bold mb-4">هل أنت من سكان حي العزيزية وتبحث عن فني زجاج؟</h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">تواصل معنا الآن عبر الاتصال المباشر أو الواتساب، وسيقوم فريقنا بخدمتك فورا وبأعلى معايير الجودة.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:0544315961" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
-                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0544315961
+              <a href="tel:0558935165" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0558935165
               </a>
-              <a href="https://wa.me/966544315961" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+              <a href="https://wa.me/966558935165" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
                 <MessageCircle className="w-5 h-5 ml-2" /> تواصل واتساب
               </a>
             </div>

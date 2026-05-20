@@ -6,7 +6,7 @@ import { Phone, CheckCircle, Waves } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب زجاج مسابح وأرضيات بالمدينة المنورة | حماية وأمان 2025",
-    description: "تركيب زجاج مسابح وأرضيات زجاجية بالمدينة المنورة 🏊‍♂️ سماكات عالية، مقاوم للضغط والعوامل الجوية لحماية الأطفال بأناقة ✅ مؤسسة عمر طلال | 0544315961",
+    description: "تركيب زجاج مسابح وأرضيات زجاجية بالمدينة المنورة 🏊‍♂️ سماكات عالية، مقاوم للضغط والعوامل الجوية لحماية الأطفال بأناقة ✅ مؤسسة عمر طلال | 0558935165",
     path: "/services/pools-glass"
   });
 }
@@ -70,8 +70,8 @@ export default function PoolsGlassPage() {
              لا تترك المسبح بدون حماية. تواصل معنا اليوم لتركيب أحدث الحواجز الزجاجية المتوافقة مع كود البناء واشتراطات السلامة.
            </p>
            <div className="flex justify-center">
-             <a href="tel:0544315961" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
-               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> اتصل للحصول على عرض سعر مجاني: 0544315961
+             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
+               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> اتصل للحصول على عرض سعر مجاني: 0558935165
              </a>
            </div>
         </div>

@@ -6,7 +6,7 @@ import { Phone, CheckCircle, Building2 } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب واجهات زجاج سيكوريت بالمدينة المنورة | محلات وفنادق ومولات 2025",
-    description: "تركيب واجهات زجاج سيكوريت احترافية بالمدينة المنورة 🏢 شفاف | عاكس | ملون | كرتن وول | سبيدر ✅ أرخص سعر متر + ضمان + صيانة مجانية أول سنة | 0544315961",
+    description: "تركيب واجهات زجاج سيكوريت احترافية بالمدينة المنورة 🏢 شفاف | عاكس | ملون | كرتن وول | سبيدر ✅ أرخص سعر متر + ضمان + صيانة مجانية أول سنة | 0558935165",
     path: "/services/facades-glass"
   });
 }
@@ -70,8 +70,8 @@ export default function FacadesGlassPage() {
              نقوم بتنفيذ أضخم المشاريع التجارية بواجهات زجاجية عصرية مطابقة لمواصفات الجودة والأمان مع تقديم أرخص سعر للمتر بالمدينة المنورة.
            </p>
            <div className="flex justify-center">
-             <a href="tel:0544315961" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
-               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> تواصل مع المهندس المختص: 0544315961
+             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
+               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> تواصل مع المهندس المختص: 0558935165
              </a>
            </div>
         </div>

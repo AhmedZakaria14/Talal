@@ -9,7 +9,7 @@ export default function LocalSEO() {
         "alternateName": ["زجاج سيكوريت المدينة المنورة", "عمر طلال للزجاج"],
         "description": "متخصصون في توريد وتركيب زجاج سيكوريت بالمدينة المنورة بخبرة أكثر من 20 عاماً",
         "url": "https://tarkeb-zoogag.com",
-        "telephone": "+966544315961",
+        "telephone": "+966558935165",
         "priceRange": "$$",
         "image": "https://tarkeb-zoogag.com/wp-content/uploads/2024/06/logo2-1.png",
         "logo": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
