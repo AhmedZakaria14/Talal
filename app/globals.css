@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+[data-rmiz-overlay] {
+  background-color: rgba(10, 22, 40, 0.95) !important;
+}
+
 /* Glassmorphism utility */
 .glass {
   background: rgba(255, 255, 255, 0.05);

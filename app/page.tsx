@@ -3,10 +3,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView, animate, AnimatePresence, useScroll, useTransform } from 'motion/react';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { 
   Menu, X, Phone, MessageCircle, Shield, Wrench, Clock, CheckCircle, 
   MapPin, ChevronUp, Droplets, Building2, DoorOpen, LayoutGrid, Store, 
-  Briefcase, Waves, Settings, Check, ChevronLeft, Star
+  Briefcase, Waves, Settings, Check, ChevronLeft, Star, Plus
 } from 'lucide-react';
 
 const phoneNumber = "0544315961";
@@ -464,18 +466,23 @@ export default function Home() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  className="rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow relative aspect-[4/3] group bg-white"
+                  className="rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all relative aspect-[4/3] group bg-white cursor-zoom-in"
                 >
-                  <Image
-                    src={img.src}
-                    alt={img.category}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
-                    <span className="text-white font-bold text-lg">{img.category}</span>
+                  <Zoom zoomMargin={40}>
+                    <div className="relative aspect-[4/3] w-full h-full">
+                      <Image
+                        src={img.src}
+                        alt={img.category}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        referrerPolicy="no-referrer"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    </div>
+                  </Zoom>
+                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0a1628]/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                    <span className="text-white font-bold text-lg mb-1">{img.category}</span>
+                    <span className="text-gray-300 text-sm flex items-center"><Plus className="w-4 h-4 ml-1" /> اضغط للتكبير</span>
                   </div>
                 </motion.div>
               ))}
