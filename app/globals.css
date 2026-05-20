@@ -17,6 +17,11 @@ html {
   background-color: rgba(10, 22, 40, 0.95) !important;
 }
 
+[data-rmiz-wrap] {
+  width: 100%;
+  height: 100%;
+}
+
 /* Glassmorphism utility */
 .glass {
   background: rgba(255, 255, 255, 0.05);

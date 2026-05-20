@@ -187,7 +187,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </head>
-      <body className="font-tajawal antialiased bg-[#f8f9fa] text-[#0a1628] selection:bg-[#1e4d8c] selection:text-white overflow-x-hidden" suppressHydrationWarning>
+      <body className="font-tajawal antialiased bg-[#f8f9fa] text-[#0a1628] selection:bg-[#1e4d8c] selection:text-white" suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

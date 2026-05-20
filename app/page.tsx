@@ -139,7 +139,7 @@ export default function Home() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <main className="min-h-screen relative font-tajawal text-[#0a1628] overflow-x-hidden w-full">
+    <main className="min-h-screen relative font-tajawal text-[#0a1628]">
       
       {/* 1. HEADER / NAVBAR (Sticky) */}
       <header 
@@ -222,7 +222,18 @@ export default function Home() {
                     key={link.label} 
                     href={link.href} 
                     className="block text-[#0a1628] font-semibold text-lg py-2 border-b border-gray-100"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setMobileMenuOpen(false);
+                      setTimeout(() => {
+                        const targetId = link.href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                          targetElement.scrollIntoView({ behavior: 'smooth' });
+                          window.history.pushState(null, '', link.href);
+                        }
+                      }, 100);
+                    }}
                   >
                     {link.label}
                   </a>
@@ -468,17 +479,13 @@ export default function Home() {
                   transition={{ duration: 0.3 }}
                   className="rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all relative aspect-[4/3] group bg-white cursor-zoom-in"
                 >
-                  <Zoom zoomMargin={40}>
-                    <div className="relative aspect-[4/3] w-full h-full">
-                      <Image
-                        src={img.src}
-                        alt={img.category}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        referrerPolicy="no-referrer"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                    </div>
+                  <Zoom zoomMargin={40} classDialog="custom-zoom-dialog">
+                    <img
+                      src={img.src}
+                      alt={img.category}
+                      className="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
                   </Zoom>
                   <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#0a1628]/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
                     <span className="text-white font-bold text-lg mb-1">{img.category}</span>
@@ -497,7 +504,7 @@ export default function Home() {
       </section>
 
       {/* 8. ABOUT/TEAM SECTION */}
-      <section className="py-20 lg:py-28 bg-white overflow-hidden w-full">
+      <section className="py-20 lg:py-28 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
