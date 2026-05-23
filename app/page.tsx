@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView, animate, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { 
@@ -55,35 +55,43 @@ const TRUST_ICONS = [
 const SERVICES = [
   {
     icon: Droplets, title: 'شاور زجاج سيكوريت',
-    points: ['ثابت، منزلق، مفصلي، قابل للطي', 'أسود، مطفي، مع نقوش، بدون إطار', 'سماكات: 10 ملم و12 ملم', 'تركيب في: العزيزية، العوالي، قباء، وغيرهم']
+    points: ['ثابت، منزلق، مفصلي، قابل للطي', 'أسود، مطفي، مع نقوش، بدون إطار', 'سماكات: 10 ملم و12 ملم', 'تركيب في: العزيزية، العوالي، قباء، وغيرهم'],
+    link: '/services/shower-glass'
   },
   {
     icon: Building2, title: 'واجهات زجاج سيكوريت',
-    points: ['شفاف، عاكس، ملون', 'نظام استركشر، سبيدر، كرتن وول', 'للمحلات، المعارض، المطاعم، الفنادق', 'مقاوم للكسر والرصاص (12 ملم)']
+    points: ['شفاف، عاكس، ملون', 'نظام استركشر، سبيدر، كرتن وول', 'للمحلات، المعارض، المطاعم، الفنادق', 'مقاوم للكسر والرصاص (12 ملم)'],
+    link: '/services/facades-glass'
   },
   {
     icon: DoorOpen, title: 'أبواب زجاج سيكوريت',
-    points: ['أوتوماتيكية، منزلقة، مفصلية، سحب', 'للمحلات، العمارات، المولات، الفنادق', 'موتورات ياباني وإيطالي', 'إكسسوارات ألماني وتركي أصلي']
+    points: ['أوتوماتيكية، منزلقة، مفصلية، سحب', 'للمحلات، العمارات، المولات، الفنادق', 'موتورات ياباني وإيطالي', 'إكسسوارات ألماني وتركي أصلي'],
+    link: '/services/doors-glass'
   },
   {
     icon: LayoutGrid, title: 'دربزين زجاج سيكوريت',
-    points: ['للدرج الداخلي والخارجي، المسابح', 'مع استانلس ستيل، بدون إطار', 'سماكة 12+12 ملم للأمان الكامل', 'أحدث تصاميم 2025 مع إضاءة مخفية']
+    points: ['للدرج الداخلي والخارجي، المسابح', 'مع استانلس ستيل، بدون إطار', 'سماكة 12+12 ملم للأمان الكامل', 'أحدث تصاميم 2025 مع إضاءة مخفية'],
+    link: '/services/railing-glass'
   },
   {
     icon: Store, title: 'زجاج محلات تجارية',
-    points: ['عدادات، رفوف عرض، أرفف متخصصة', 'للذهب والمجوهرات، الملابس، التمور', 'مقاوم للخدش والكسر', 'في: طريق الملك عبدالله، الحرم، العزيزية']
+    points: ['عدادات، رفوف عرض، أرفف متخصصة', 'للذهب والمجوهرات، الملابس، التمور', 'مقاوم للخدش والكسر', 'في: طريق الملك عبدالله، الحرم، العزيزية'],
+    link: '/services/shops-glass'
   },
   {
     icon: Briefcase, title: 'زجاج مكاتب وقواطع',
-    points: ['قواطع عازلة للصوت', 'سمارت جلاس (يتحول مطفي بضغطة زر)', 'شفاف، مطفي، مع ستائر داخلية', 'دبل جلاس عازل حراري وصوتي']
+    points: ['قواطع عازلة للصوت', 'سمارت جلاس (يتحول مطفي بضغطة زر)', 'شفاف، مطفي، مع ستائر داخلية', 'دبل جلاس عازل حراري وصوتي'],
+    link: '/services/offices-glass'
   },
   {
     icon: Waves, title: 'زجاج مسابح وأرضيات',
-    points: ['12+12 ملم، شفاف كريستال', 'مضاد للانزلاق', 'جدران مسابح، أرضيات زجاجية', 'مقاوم للكلور والشمس']
+    points: ['12+12 ملم، شفاف كريستال', 'مضاد للانزلاق', 'جدران مسابح، أرضيات زجاجية', 'مقاوم للكلور والشمس'],
+    link: '/services/pools-glass'
   },
   {
     icon: Settings, title: 'صيانة وإصلاح الزجاج',
-    points: ['تغيير زجاج مكسور، إصلاح أبواب', 'تعديل مقاسات شاور، تغيير إكسسوارات', 'إصلاح دربزين، تركيب مفصلات', 'طوارئ 24 ساعة، تغطية: ينبع، العلا، خيبر']
+    points: ['تغيير زجاج مكسور، إصلاح أبواب', 'تعديل مقاسات شاور، تغيير إكسسوارات', 'إصلاح دربزين، تركيب مفصلات', 'طوارئ 24 ساعة، تغطية: ينبع، العلا، خيبر'],
+    link: '/services/maintenance-glass'
   }
 ];
 
@@ -109,8 +117,11 @@ const GALLERY_IMAGES = [
 ];
 
 const COVERAGE = [
-  "العزيزية", "العوالي", "قباء", "الرانوناء", "سلطانه", "بني حارثة", 
-  "طريق الملك عبدالله", "الحرم", "الدائري", "ينبع", "العلا", "خيبر"
+  { label: "العزيزية", link: "/areas/al-aziziyah" },
+  { label: "سلطانه", link: "/areas/sultanah" },
+  { label: "العوالي" }, { label: "قباء" }, { label: "الرانوناء" }, { label: "بني حارثة" }, 
+  { label: "طريق الملك عبدالله" }, { label: "الحرم" }, { label: "الدائري" }, 
+  { label: "ينبع" }, { label: "العلا" }, { label: "خيبر" }
 ];
 
 export default function Home() {
@@ -396,7 +407,7 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <a href={`tel:${phoneNumber}`} className="inline-flex items-center text-[#1e4d8c] font-bold hover:text-[#c9a84c] transition-colors">
+                  <a href={srv.link} className="inline-flex items-center text-[#1e4d8c] font-bold hover:text-[#c9a84c] transition-colors">
                     اعرف اكثر <ChevronLeft className="w-4 h-4 mr-1" />
                   </a>
                 </div>
@@ -573,18 +584,29 @@ export default function Home() {
             نخدم جميع أحياء المدينة المنورة والمناطق المجاورة
           </motion.h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {COVERAGE.map((area, i) => (
-              <motion.span 
-                key={i} 
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
-                className="bg-white text-[#1e4d8c] border border-blue-100 px-4 py-2 rounded-lg font-semibold shadow-sm flex items-center hover:-translate-y-1 transition-transform"
-              >
-                <MapPin className="w-4 h-4 ml-1.5 text-[#c9a84c]" /> {area}
-              </motion.span>
-            ))}
+            {COVERAGE.map((area, i) => {
+              const content = (
+                <motion.span 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
+                  className="bg-white text-[#1e4d8c] border border-blue-100 px-4 py-2 rounded-lg font-semibold shadow-sm flex items-center hover:-translate-y-1 transition-transform"
+                >
+                  <MapPin className="w-4 h-4 ml-1.5 text-[#c9a84c]" /> {area.label}
+                </motion.span>
+              );
+              
+              if (area.link) {
+                return (
+                  <a key={i} href={area.link} className="block">
+                    {content}
+                  </a>
+                );
+              }
+              
+              return React.cloneElement(content, { key: i });
+            })}
           </div>
         </div>
       </section>
@@ -616,7 +638,7 @@ export default function Home() {
                 <MapPin className="w-8 h-8 text-[#1e4d8c] group-hover:text-white" />
               </div>
               <div>
-                <h4 className="font-bold text-[#0a1628] mb-1">موقعنا</h4>
+                <h3 className="font-bold text-[#0a1628] mb-1">موقعنا</h3>
                 <p className="text-gray-600 text-sm">المدينة المنورة - السعودية</p>
               </div>
             </a>
@@ -625,7 +647,7 @@ export default function Home() {
                 <Phone className="w-8 h-8 text-[#1e4d8c] group-hover:text-white" />
               </div>
               <div>
-                <h4 className="font-bold text-[#0a1628] mb-1">رقم الجوال</h4>
+                <h3 className="font-bold text-[#0a1628] mb-1">رقم الجوال</h3>
                 <p className="text-gray-600 text-sm" dir="ltr">{phoneNumber}</p>
               </div>
             </a>
@@ -634,7 +656,7 @@ export default function Home() {
                 <Clock className="w-8 h-8 text-[#1e4d8c]" />
               </div>
               <div>
-                <h4 className="font-bold text-[#0a1628] mb-1">ساعات العمل</h4>
+                <h3 className="font-bold text-[#0a1628] mb-1">ساعات العمل</h3>
                 <p className="text-gray-600 text-sm">24 ساعة طوال الأسبوع</p>
               </div>
             </div>
