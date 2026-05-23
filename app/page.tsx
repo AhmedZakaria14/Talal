@@ -220,7 +220,7 @@ export default function Home() {
               <a 
                 href={waLink} 
                 target="_blank" 
-                rel="noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="bg-[#25D366] hover:bg-[#1ebd5a] text-white p-3 rounded-full transition-transform hover:scale-110 shadow-lg"
                 aria-label="تواصل واتساب"
               >
@@ -275,7 +275,7 @@ export default function Home() {
                     <Phone className="w-5 h-5 ml-2" />
                     {phoneNumber}
                   </a>
-                  <a href={waLink} className="bg-[#25D366] text-white text-center py-3 rounded-xl font-bold flex items-center justify-center">
+                  <a href={waLink} target="_blank" rel="noopener noreferrer nofollow" className="bg-[#25D366] text-white text-center py-3 rounded-xl font-bold flex items-center justify-center">
                     <MessageCircle className="w-5 h-5 ml-2" />
                     تواصل واتساب
                   </a>
@@ -346,7 +346,7 @@ export default function Home() {
             <a href={`tel:${phoneNumber}`} className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center transition-all shadow-[0_0_20px_rgba(201,168,76,0.3)] hover:shadow-[0_0_30px_rgba(201,168,76,0.5)]">
               <Phone className="w-6 h-6 ml-2" /> اتصل بنا الآن
             </a>
-            <a href={waLink} target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center transition-all shadow-lg hover:shadow-xl">
+            <a href={waLink} target="_blank" rel="noopener noreferrer nofollow" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center transition-all shadow-lg hover:shadow-xl">
               <MessageCircle className="w-6 h-6 ml-2" /> تواصل عبر واتساب
             </a>
           </motion.div>
@@ -527,7 +527,7 @@ export default function Home() {
             </AnimatePresence>
           </motion.div>
           <div className="text-center mt-12">
-             <a href={waLink} target="_blank" rel="noreferrer" className="inline-flex items-center text-[#c9a84c] font-bold hover:text-[#0a1628] transition-colors border-b-2 border-transparent hover:border-[#0a1628] pb-1">
+             <a href={waLink} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center text-[#c9a84c] font-bold hover:text-[#0a1628] transition-colors border-b-2 border-transparent hover:border-[#0a1628] pb-1">
                اطلب رؤية المزيد من الأعمال عبر الواتساب <ChevronLeft className="w-5 h-5 mr-1" />
              </a>
           </div>
@@ -622,7 +622,7 @@ export default function Home() {
             <a href={`tel:${phoneNumber}`} className="bg-white text-[#0a1628] hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center transition-transform hover:scale-105 shadow-xl">
               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> اتصل الآن: {phoneNumber}
             </a>
-            <a href={waLink} target="_blank" rel="noreferrer" className="bg-[#25D366] text-white hover:bg-[#1ebd5a] px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center transition-transform hover:scale-105 shadow-xl">
+            <a href={waLink} target="_blank" rel="noopener noreferrer nofollow" className="bg-[#25D366] text-white hover:bg-[#1ebd5a] px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center transition-transform hover:scale-105 shadow-xl">
               <MessageCircle className="w-6 h-6 ml-2" /> واتساب مباشر
             </a>
           </div>
@@ -633,7 +633,7 @@ export default function Home() {
       <section id="contact" className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href={mapLink} target="_blank" rel="noreferrer" className="flex items-center p-6 bg-[#f8f9fa] rounded-2xl hover:shadow-md transition-shadow group">
+            <a href={mapLink} target="_blank" rel="noopener noreferrer nofollow" className="flex items-center p-6 bg-[#f8f9fa] rounded-2xl hover:shadow-md transition-shadow group">
               <div className="bg-[#1e4d8c]/10 p-4 rounded-xl ml-4 group-hover:bg-[#1e4d8c] transition-colors">
                 <MapPin className="w-8 h-8 text-[#1e4d8c] group-hover:text-white" />
               </div>
@@ -735,7 +735,7 @@ export default function Home() {
         <a 
           href={waLink} 
           target="_blank" 
-          rel="noreferrer" 
+          rel="noopener noreferrer nofollow" 
           className="bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform "
           aria-label="تواصل واتساب"
         >
