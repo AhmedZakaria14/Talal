@@ -19,10 +19,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | مؤسسة عمر طلال للزجاج - المدينة المنورة',
-    default: 'زجاج سيكوريت بالمدينة المنورة | عمر طلال - 0558935165',
+    template: '%s | مؤسسة عالم الفن والهندسة للزجاج - المدينة المنورة',
+    default: 'زجاج سيكوريت بالمدينة المنورة | عالم الفن والهندسة - 0548980056',
   },
-  description: 'أفضل شركة تركيب زجاج سيكوريت بالمدينة المنورة. تفصيل واجهات شاورات أبواب ومكاتب بضمان 10 سنوات. اتصل الآن: 0558935165',
+  description: 'أفضل شركة تركيب زجاج سيكوريت بالمدينة المنورة. تفصيل واجهات شاورات أبواب ومكاتب بضمان 10 سنوات. اتصل الآن: 0548980056',
   keywords: [
     'تركيب زجاج سيكوريت بالمدينة المنورة',
     'شركة تركيب زجاج المدينة المنورة',
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
     'فني زجاج سيكوريت المدينة المنورة'
   ],
   openGraph: {
-    title: 'تركيب زجاج سيكوريت بالمدينة المنورة | مؤسسة عمر طلال',
+    title: 'تركيب زجاج سيكوريت بالمدينة المنورة | مؤسسة عالم الفن والهندسة',
     description: 'أفضل شركة تركيب زجاج سيكوريت بالمدينة المنورة. تفصيل واجهات شاورات أبواب ومكاتب بضمان 10 سنوات.',
     url: 'https://tarkeb-zoogag.com',
-    siteName: 'مؤسسة عمر طلال للزجاج',
+    siteName: 'مؤسسة عالم الفن والهندسة للزجاج',
     images: [
       {
         url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
         width: 1200,
         height: 630,
-        alt: 'مؤسسة عمر طلال للزجاج - المدينة المنورة',
+        alt: 'مؤسسة عالم الفن والهندسة للزجاج - المدينة المنورة',
       }
     ],
     locale: 'ar_SA',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'تركيب زجاج سيكوريت بالمدينة المنورة | مؤسسة عمر طلال',
+    title: 'تركيب زجاج سيكوريت بالمدينة المنورة | مؤسسة عالم الفن والهندسة',
     description: 'أفضل شركة تركيب زجاج سيكوريت بالمدينة المنورة. تفصيل واجهات شاورات أبواب ومكاتب بضمان 10 سنوات.',
     images: ['https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp'],
   },
@@ -94,8 +94,8 @@ const jsonLd = {
     {
       "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
       "@id": "https://tarkeb-zoogag.com/#business",
-      "name": "مؤسسة عمر طلال لجميع أعمال الزجاج بالمدينة المنورة",
-      "alternateName": ["زجاج سيكوريت المدينة المنورة", "عمر طلال للزجاج"],
+      "name": "مؤسسة عالم الفن والهندسة لجميع أعمال الزجاج بالمدينة المنورة",
+      "alternateName": ["زجاج سيكوريت المدينة المنورة", "عالم الفن والهندسة للزجاج"],
       "description": "متخصصون في توريد وتركيب زجاج سيكوريت بالمدينة المنورة بخبرة أكثر من 20 عاماً",
       "url": "https://tarkeb-zoogag.com",
       "telephone": "+966558935165",
@@ -167,7 +167,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://tarkeb-zoogag.com/#website",
       "url": "https://tarkeb-zoogag.com",
-      "name": "مؤسسة عمر طلال لجميع أعمال الزجاج",
+      "name": "مؤسسة عالم الفن والهندسة لجميع أعمال الزجاج",
       "inLanguage": "ar",
       "publisher": {"@id": "https://tarkeb-zoogag.com/#business"},
       "potentialAction": {

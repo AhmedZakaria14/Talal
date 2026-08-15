@@ -5,8 +5,8 @@ export default function LocalSEO() {
       {
         "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://tarkeb-zoogag.com/#business",
-        "name": "مؤسسة عمر طلال لجميع أعمال الزجاج بالمدينة المنورة",
-        "alternateName": ["زجاج سيكوريت المدينة المنورة", "عمر طلال للزجاج"],
+        "name": "مؤسسة عالم الفن والهندسة لجميع أعمال الزجاج بالمدينة المنورة",
+        "alternateName": ["زجاج سيكوريت المدينة المنورة", "عالم الفن والهندسة للزجاج"],
         "description": "متخصصون في توريد وتركيب زجاج سيكوريت بالمدينة المنورة بخبرة أكثر من 20 عاماً",
         "url": "https://tarkeb-zoogag.com",
         "telephone": "+966558935165",
@@ -69,7 +69,7 @@ export default function LocalSEO() {
         "@type": "WebSite",
         "@id": "https://tarkeb-zoogag.com/#website",
         "url": "https://tarkeb-zoogag.com",
-        "name": "مؤسسة عمر طلال لجميع أعمال الزجاج",
+        "name": "مؤسسة عالم الفن والهندسة لجميع أعمال الزجاج",
         "inLanguage": "ar",
         "publisher": {"@id": "https://tarkeb-zoogag.com/#business"},
         "potentialAction": {

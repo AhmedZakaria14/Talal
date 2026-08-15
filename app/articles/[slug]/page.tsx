@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!article) {
     return {
-      title: 'مقال غير موجود | مؤسسة عمر طلال للزجاج'
+      title: 'مقال غير موجود | مؤسسة عالم الفن والهندسة للزجاج'
     };
   }
 
   return {
-    title: `${article.title} | مؤسسة عمر طلال للزجاج`,
+    title: `${article.title} | مؤسسة عالم الفن والهندسة للزجاج`,
     description: article.desc,
     alternates: {
       canonical: `https://tarkeb-zoogag.com/articles/${resolvedParams.slug}`,
@@ -79,7 +79,7 @@ export default async function ArticlePage({ params }: Props) {
             <div className="flex items-center justify-center space-x-6 space-x-reverse text-gray-500 font-medium">
               <span className="flex items-center">
                 <User className="w-5 h-5 ml-2 text-[#c9a84c]" />
-                مؤسسة عمر طلال للزجاج
+                مؤسسة عالم الفن والهندسة للزجاج
               </span>
               <span className="flex items-center">
                 <Calendar className="w-5 h-5 ml-2 text-[#c9a84c]" />
@@ -98,7 +98,7 @@ export default async function ArticlePage({ params }: Props) {
               يعتبر اختيار زجاج السيكوريت قراراً حاسماً في أي مشروع بناء أو تجديد بالمدينة المنورة. فالزجاج لا يقتصر دوره على التجميل، بل يمتد ليوفر الحماية، العزل الصوتي والحراري، والخصوصية سواء للشركات، المكاتب، المنازل، أو الفنادق.
             </p>
 
-            <h2>لماذا مؤسسة عمر طلال هي خيارك الأول؟</h2>
+            <h2>لماذا مؤسسة عالم الفن والهندسة هي خيارك الأول؟</h2>
             <ul>
               <li><strong>الخبرة الطويلة:</strong> أكثر من 20 عاماً في خدمة سكان وأصحاب الأعمال بالمدينة المنورة في تركيب شاورات، واجهات، وأبواب زجاجية.</li>
               <li><strong>جودة المواد:</strong> نستخدم زجاج سيكوريت عالي السماكة (10-12 ملم) وإكسسوارات استيل مقاومة للصدأ.</li>

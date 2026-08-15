@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "مقالات ومدونة زجاج السيكوريت | مؤسسة عمر طلال للزجاج",
+  title: "مقالات ومدونة زجاج السيكوريت | مؤسسة عالم الفن والهندسة للزجاج",
   description: "دليلك الشامل لكل ما يخص تركيب وصيانة زجاج السيكوريت، الشاورات، الدربزين، والواجهات الزجاجية في المدينة المنورة. نصائح وأسعار 2025.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/articles",
@@ -17,12 +17,12 @@ export default function ArticlesPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "مدونة مؤسسة عمر طلال للزجاج بالمدينة المنورة",
+    "name": "مدونة مؤسسة عالم الفن والهندسة للزجاج بالمدينة المنورة",
     "url": "https://tarkeb-zoogag.com/articles",
     "description": "مقالات متخصصة في أعمال تركيب وصيانة الزجاج السيكوريت.",
     "publisher": {
       "@type": "Organization",
-      "name": "مؤسسة عمر طلال للزجاج",
+      "name": "مؤسسة عالم الفن والهندسة للزجاج",
       "logo": {
         "@type": "ImageObject",
         "url": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp"

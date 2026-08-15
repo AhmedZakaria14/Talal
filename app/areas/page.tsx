@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { MapPin, ChevronLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "أحياء ومناطق الخدمة بالمدينة المنورة | مؤسسة عمر طلال للزجاج",
+  title: "أحياء ومناطق الخدمة بالمدينة المنورة | مؤسسة عالم الفن والهندسة للزجاج",
   description: "نغطي كافة أحياء المدينة المنورة لتقديم أرقى خدمات تركيب زجاج السيكوريت، الشاورات، والواجهات. تعرف على قائمة الأحياء التي نخدمها.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/areas",
@@ -30,7 +30,7 @@ export default function AreasPage() {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h1 className="text-4xl md:text-5xl font-extrabold text-[#0a1628] mb-6">مناطق الخدمة بالمدينة المنورة</h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              تغطي خدماتنا في مؤسسة عمر طلال كافة أنحاء وأحياء المدينة المنورة. بفضل فريقنا المجهز بالكامل وأسطول سياراتنا، نضمن لك وصولاً سريعاً للمعاينة وإنجاز العمل في أي وقت وأي منطقة داخل المدينة.
+              تغطي خدماتنا في مؤسسة عالم الفن والهندسة كافة أنحاء وأحياء المدينة المنورة. بفضل فريقنا المجهز بالكامل وأسطول سياراتنا، نضمن لك وصولاً سريعاً للمعاينة وإنجاز العمل في أي وقت وأي منطقة داخل المدينة.
             </p>
           </div>
 

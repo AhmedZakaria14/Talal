@@ -84,7 +84,7 @@ export function generateServiceSchema({
     description,
     provider: {
       '@type': 'LocalBusiness',
-      name: 'مؤسسة عمر طلال لجميع أعمال الزجاج بالمدينة المنورة',
+      name: 'مؤسسة عالم الفن والهندسة لجميع أعمال الزجاج بالمدينة المنورة',
       telephone: '+966558935165',
     },
     areaServed: {
@@ -120,11 +120,11 @@ export function generateArticleSchema({
     dateModified,
     author: {
       '@type': 'Organization',
-      name: 'مؤسسة عمر طلال للزجاج',
+      name: 'مؤسسة عالم الفن والهندسة للزجاج',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'مؤسسة عمر طلال للزجاج',
+      name: 'مؤسسة عالم الفن والهندسة للزجاج',
       logo: {
         '@type': 'ImageObject',
         url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',

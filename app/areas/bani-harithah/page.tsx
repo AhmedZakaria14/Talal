@@ -3,7 +3,7 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import { Phone, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "تركيب زجاج سيكوريت حي بني حارثة | مؤسسة عمر طلال - 0558935165",
+  title: "تركيب زجاج سيكوريت حي بني حارثة | مؤسسة عالم الفن والهندسة - 0548980056",
   description: "المؤسسة الرائدة في تركيب الزجاج السيكوريت بحي بني حارثة بالمدينة. تركيب درابزين، أبواب، شاورات زجاجية بأعلى معايير الأمان والسلامة.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/areas/bani-harithah",
@@ -14,7 +14,7 @@ export default function BaniHarithahPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "مؤسسة عمر طلال - تركيب زجاج حي بني حارثة",
+    "name": "مؤسسة عالم الفن والهندسة - تركيب زجاج حي بني حارثة",
     "image": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
     "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/bani-harithah",
@@ -40,7 +40,7 @@ export default function BaniHarithahPage() {
           
           <div className="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed mb-10">
             <p>
-              لعملاء حي بني حارثة العريق بالمدينة المنورة، نوفر في مؤسسة عمر طلال أحدث الحلول الزجاجية المتكاملة باستخدام أجود أنواع السيكوريت المقاوم للكسر والحرارة. نلبي كافة الطلبات السكنية والمشاريع التجارية التابعة للحي بمهنية واحترافية لا تضاهى، وبأسعار مدروسة تناسب الجميع.
+              لعملاء حي بني حارثة العريق بالمدينة المنورة، نوفر في مؤسسة عالم الفن والهندسة أحدث الحلول الزجاجية المتكاملة باستخدام أجود أنواع السيكوريت المقاوم للكسر والحرارة. نلبي كافة الطلبات السكنية والمشاريع التجارية التابعة للحي بمهنية واحترافية لا تضاهى، وبأسعار مدروسة تناسب الجميع.
             </p>
             <p>
               نمتلك ورش ومعدات مجهزة بالكامل تمكننا من تغطية طلبات سكان بني حارثة بسرعة قياسية. سواء أكنت ترغب في تجديد ديكور الحمام عبر تركيب كابينة شاور زجاجية شفافة توسع المكان وتمنع تسرب المياه، أو ترغب في تركيب قواطع زجاجية للمجالس وممرات الضيوف لتوفير الخصوصية دون حجب الرؤية أو الإنارة، فتأكد أنك مع الفريق الصح.
@@ -72,8 +72,8 @@ export default function BaniHarithahPage() {
             <h3 className="text-2xl font-bold mb-4">نحن في خدمتك على مدار الساعة</h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">إذا كنت تخطط لتركيب أي نوع من الزجاج في عقارك بمنطقة بني حارثة، لا تتردد بالاتصال للحصول على تسعيرة فورية ومنافسة.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:0558935165" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
-                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0558935165
+              <a href="tel:0548980056" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0548980056
               </a>
               <a href="https://wa.me/966558935165" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
                 <MessageCircle className="w-5 h-5 ml-2" /> تواصل واتساب

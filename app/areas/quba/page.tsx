@@ -3,7 +3,7 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import { Phone, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "تركيب زجاج سيكوريت حي قباء | مؤسسة عمر طلال - 0558935165",
+  title: "تركيب زجاج سيكوريت حي قباء | مؤسسة عالم الفن والهندسة - 0548980056",
   description: "خدمات تفصيل وتركيب زجاج السيكوريت في حي قباء وما حوله بالمدينة المنورة. نقوم بتنفيذ الواجهات والمحلات بأجود أنواع الزجاج. اتصل للمعاينة المجانية.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/areas/quba",
@@ -14,7 +14,7 @@ export default function QubaPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "مؤسسة عمر طلال - تركيب زجاج حي قباء",
+    "name": "مؤسسة عالم الفن والهندسة - تركيب زجاج حي قباء",
     "image": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
     "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/quba",
@@ -40,7 +40,7 @@ export default function QubaPage() {
           
           <div className="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed mb-10">
             <p>
-              نفتخر في مؤسسة عمر طلال بتقديم أسرع وأدق خدمات تركيب الزجاج السيكوريت في منطقة وحي قباء التاريخي بالمدينة المنورة. يعتبر حي قباء من المناطق الحيوية ذات النشاط التجاري الكثيف والسكني المتنوع، ما يجعلنا حريصين على توفير باقة واسعة من خدمات الزجاج لتلبي حاجة السوق هناك بحرفية عالية.
+              نفتخر في مؤسسة عالم الفن والهندسة بتقديم أسرع وأدق خدمات تركيب الزجاج السيكوريت في منطقة وحي قباء التاريخي بالمدينة المنورة. يعتبر حي قباء من المناطق الحيوية ذات النشاط التجاري الكثيف والسكني المتنوع، ما يجعلنا حريصين على توفير باقة واسعة من خدمات الزجاج لتلبي حاجة السوق هناك بحرفية عالية.
             </p>
             <p>
               نقوم بتركيب واجهات زجاجية للمتاجر والأسواق في حي قباء لجذب الانتباه وتوفير رؤية بانورامية واضحة للبضائع والمعروضات بفضل صفاء ونقاء الزجاج الذي نستخدمه والمستورد من أفضل المصانع. كما ننفذ قواطع المكاتب الإدارية لشركات المنطقة لزيادة المساحة البصرية.
@@ -70,10 +70,10 @@ export default function QubaPage() {
 
           <div className="bg-[#0a1628] rounded-2xl p-8 text-center text-white pb-12">
             <h3 className="text-2xl font-bold mb-4">في قلب حي قباء، نحن الأقرب والأسرع إليك</h3>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">للاستفسارات ولتحديد موعد مع فني الزجاج في مؤسسة عمر طلال، بادر بالتواصل معنا الآن عبر أرقامنا المباشرة.</p>
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">للاستفسارات ولتحديد موعد مع فني الزجاج في مؤسسة عالم الفن والهندسة، بادر بالتواصل معنا الآن عبر أرقامنا المباشرة.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:0558935165" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
-                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0558935165
+              <a href="tel:0548980056" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0548980056
               </a>
               <a href="https://wa.me/966558935165" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
                 <MessageCircle className="w-5 h-5 ml-2" /> تواصل واتساب

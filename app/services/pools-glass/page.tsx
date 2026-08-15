@@ -6,7 +6,7 @@ import { Phone, CheckCircle, Waves } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب زجاج مسابح وأرضيات بالمدينة المنورة | حماية وأمان 2025",
-    description: "تركيب زجاج مسابح وأرضيات زجاجية بالمدينة المنورة 🏊‍♂️ سماكات عالية، مقاوم للضغط والعوامل الجوية لحماية الأطفال بأناقة ✅ مؤسسة عمر طلال | 0558935165",
+    description: "تركيب زجاج مسابح وأرضيات زجاجية بالمدينة المنورة 🏊‍♂️ سماكات عالية، مقاوم للضغط والعوامل الجوية لحماية الأطفال بأناقة ✅ مؤسسة عالم الفن والهندسة | 0548980056",
     path: "/services/pools-glass"
   });
 }
@@ -36,7 +36,7 @@ export default function PoolsGlassPage() {
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
             <SEOImage 
               src="https://tarkeb-zoogag.com/wp-content/uploads/2024/09/%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%B2%D8%AC%D8%A7%D8%AC-%D9%85%D8%B3%D8%A7%D8%A8%D8%AD-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-2.webp" 
-              alt="تركيب حواجز مسابح زجاجية وأرضيات بالمدينة المنورة - مؤسسة عمر طلال"
+              alt="تركيب حواجز مسابح زجاجية وأرضيات بالمدينة المنورة - مؤسسة عالم الفن والهندسة"
               fill
               className="object-cover"
               priority={true}
@@ -70,8 +70,8 @@ export default function PoolsGlassPage() {
              لا تترك المسبح بدون حماية. تواصل معنا اليوم لتركيب أحدث الحواجز الزجاجية المتوافقة مع كود البناء واشتراطات السلامة.
            </p>
            <div className="flex justify-center">
-             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
-               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> اتصل للحصول على عرض سعر مجاني: 0558935165
+             <a href="tel:0548980056" className="inline-flex items-center justify-center bg-[#1e4d8c] text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-[#153a6c] transition-colors shadow-lg">
+               <Phone className="w-6 h-6 ml-2 text-[#c9a84c]" /> اتصل للحصول على عرض سعر مجاني: 0548980056
              </a>
            </div>
         </div>

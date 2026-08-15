@@ -9,7 +9,7 @@ import {
   Briefcase, Waves, Settings, Check, ChevronLeft, ChevronRight, Star, Plus
 } from 'lucide-react';
 
-const phoneNumber = "0558935165";
+const phoneNumber = "0548980056";
 const waNumber = "966558935165";
 const waLink = `https://wa.me/${waNumber}`;
 const mapLink = "https://maps.app.goo.gl/SVWHydus4wrQZLkk7";
@@ -185,7 +185,7 @@ export default function Home() {
             <a href="#" className="flex-shrink-0 relative z-10 block ml-4">
               <Image 
                 src={isScrolled ? "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp" : "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp"} 
-                alt="مؤسسة عمر طلال للزجاج" 
+                alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={220} 
                 height={70} 
                 className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300"
@@ -299,7 +299,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
           >
-            مؤسسة عمر طلال لأعمال<br className="hidden md:block"/> <span className="text-[#c9a84c]">زجاج سيكوريت</span> بالمدينة المنورة
+            مؤسسة عالم الفن والهندسة لأعمال<br className="hidden md:block"/> <span className="text-[#c9a84c]">زجاج سيكوريت</span> بالمدينة المنورة
           </motion.h1>
           
           <motion.p 
@@ -539,7 +539,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a1628] mb-6">فريق مؤسسة عمر طلال لتركيب الزجاج السيكوريت</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#0a1628] mb-6">فريق مؤسسة عالم الفن والهندسة لتركيب الزجاج السيكوريت</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 نحن نفخر بامتلاكنا أفضل الكوادر الفنية المتخصصة في مجالات توريد وتركيب وصيانة كافة أعمال الزجاج السيكوريت في المدينة المنورة. نعمل باحترافية عالية لضمان تقديم وتنفيذ الأعمال بأفضل جودة ممكنة.
               </p>
@@ -557,7 +557,7 @@ export default function Home() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative h-[400px] lg:h-[500px]">
                <div className="absolute inset-0 bg-[#0a1628]/5 rounded-3xl transform rotate-3"></div>
-               <Image src={encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/افضل-شركة-تركيب-واجهات-زجاج-بالمدينة-المنورة-12.webp")} alt="فريق عمر طلال" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover rounded-3xl shadow-xl z-10" referrerPolicy="no-referrer" />
+               <Image src={encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/افضل-شركة-تركيب-واجهات-زجاج-بالمدينة-المنورة-12.webp")} alt="فريق عالم الفن والهندسة" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover rounded-3xl shadow-xl z-10" referrerPolicy="no-referrer" />
                <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-2xl z-20 flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#c9a84c] rounded-full flex items-center justify-center">
                     <Star className="w-6 h-6 text-white" />
@@ -671,7 +671,7 @@ export default function Home() {
             <div>
               <Image 
                 src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp" 
-                alt="مؤسسة عمر طلال للزجاج" 
+                alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={260} 
                 height={80} 
                 className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md"
@@ -711,7 +711,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-gray-500 text-sm">
-            <p>حقوق النشر محفوظة © 2026 مؤسسة عمر طلال لجميع أعمال الزجاج بالمدينة المنورة</p>
+            <p>حقوق النشر محفوظة © 2026 مؤسسة عالم الفن والهندسة لجميع أعمال الزجاج بالمدينة المنورة</p>
           </div>
         </div>
       </footer>

@@ -3,7 +3,7 @@ import Breadcrumb from '../../../components/Breadcrumb';
 import { Phone, CheckCircle, MessageCircle, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "تركيب زجاج سيكوريت حي سلطانة | مؤسسة عمر طلال - 0558935165",
+  title: "تركيب زجاج سيكوريت حي سلطانة | مؤسسة عالم الفن والهندسة - 0548980056",
   description: "خدمات تفصيل زجاج سيكوريت وواجهات المحلات التجارية والمولات في شارع وحي سلطانة. تصميم عصري يعزز من مظهر متجرك. اتصل بنا لخدمة فورية.",
   alternates: {
     canonical: "https://tarkeb-zoogag.com/areas/sultanah",
@@ -14,7 +14,7 @@ export default function SultanahPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "مؤسسة عمر طلال - تركيب زجاج حي سلطانة",
+    "name": "مؤسسة عالم الفن والهندسة - تركيب زجاج حي سلطانة",
     "image": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
     "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/sultanah",
@@ -40,7 +40,7 @@ export default function SultanahPage() {
           
           <div className="prose prose-lg prose-blue max-w-none text-gray-700 leading-relaxed mb-10">
             <p>
-              يعد حى وممشى سلطانة بالمدينة المنورة العصب التجاري والقلب النابض للمدينة، حيث يضم أفخم الماركات العالمية والمطاعم والكافيهات. ومن هذا المنطلق السريع، نحرص في مؤسسة عمر طلال على تزويد رواد الأعمال وأصحاب المتاجر في سلطانة بأرقى وأحدث الواجهات الزجاجية التي تلفت الانتباه وتبرز هوية المتجر بوضوح تام.
+              يعد حى وممشى سلطانة بالمدينة المنورة العصب التجاري والقلب النابض للمدينة، حيث يضم أفخم الماركات العالمية والمطاعم والكافيهات. ومن هذا المنطلق السريع، نحرص في مؤسسة عالم الفن والهندسة على تزويد رواد الأعمال وأصحاب المتاجر في سلطانة بأرقى وأحدث الواجهات الزجاجية التي تلفت الانتباه وتبرز هوية المتجر بوضوح تام.
             </p>
             <p>
               نقوم بتفصيل وتركيب زجاج السيكوريت للمحلات التجارية باستخدام نظام (السبايدر) والزجاج المعلق خالي الإطارات (Frameless)، والذي يعطي واجهة عرض زجاجية كاملة دون أي عوائق بصرية، مما يزيد من جاذبية المنتجات المعروضة أمام المتسوقين في شارع سلطانة. إلى جانب تركيب الأبواب الأوتوماتيكية ذات المستشعرات الدقيقة لتحمل حركة المرور الكثيفة للعملاء.
@@ -72,8 +72,8 @@ export default function SultanahPage() {
             <h3 className="text-2xl font-bold mb-4">هل تفتتح متجرك الجديد في سطانة؟</h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">دعنا نهتم بواجهتك الزجاجية لتكون عنواناً للأناقة والجذب، اتصل بنا وستجدنا في خدمتك في أسرع وقت.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:0558935165" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
-                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0558935165
+              <a href="tel:0548980056" className="bg-[#c9a84c] hover:bg-[#b08e33] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
+                <Phone className="w-5 h-5 ml-2" /> اتصل الآن: 0548980056
               </a>
               <a href="https://wa.me/966558935165" target="_blank" rel="noreferrer" className="bg-[#25D366] hover:bg-[#1ebd5a] text-white px-8 py-3 rounded-xl font-bold text-lg flex items-center justify-center transition-colors">
                 <MessageCircle className="w-5 h-5 ml-2" /> تواصل واتساب

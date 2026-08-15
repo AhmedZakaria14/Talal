@@ -6,7 +6,7 @@ import { Phone, CheckCircle, Store } from 'lucide-react';
 export function generateMetadata() {
   return generateServiceMetadata({
     title: "تركيب زجاج محلات تجارية بالمدينة المنورة | تفصيل واجهات محلات 2025",
-    description: "تركيب زجاج المعارض والمحلات التجارية بالمدينة المنورة 🏪 تفصيل زجاج عازل ومقاوم للكسر للمقاهي والمطاعم والصيدليات ✅ أفضل الأسعار | 0558935165",
+    description: "تركيب زجاج المعارض والمحلات التجارية بالمدينة المنورة 🏪 تفصيل زجاج عازل ومقاوم للكسر للمقاهي والمطاعم والصيدليات ✅ أفضل الأسعار | 0548980056",
     path: "/services/shops-glass"
   });
 }
@@ -56,7 +56,7 @@ export default function ShopsGlassPage() {
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
             <SEOImage 
               src="https://tarkeb-zoogag.com/wp-content/uploads/2024/09/%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%B2%D8%AC%D8%A7%D8%AC-%D9%85%D8%AD%D9%84%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.webp" 
-              alt="تركيب واجهات زجاج محلات وصيدليات ومقاهي بالمدينة المنورة - مؤسسة عمر طلال"
+              alt="تركيب واجهات زجاج محلات وصيدليات ومقاهي بالمدينة المنورة - مؤسسة عالم الفن والهندسة"
               fill
               className="object-cover"
               priority={true}
@@ -68,8 +68,8 @@ export default function ShopsGlassPage() {
            <h2 className="text-3xl font-bold text-white mb-6">ارفع من قيمة ومبيعات محلك التجاري</h2>
            <p className="text-gray-300 mb-8 text-lg">اتصل الآن لنقوم بمعاينة المحل وتقديم الحل الأمثل والأنسب لواجهتك.</p>
            <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a href="tel:0558935165" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-[0_0_15px_rgba(201,168,76,0.3)]">
-               <Phone className="w-6 h-6 ml-2" /> اتصل الآن: 0558935165
+             <a href="tel:0548980056" className="inline-flex items-center justify-center bg-[#c9a84c] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#b08e33] transition-colors shadow-[0_0_15px_rgba(201,168,76,0.3)]">
+               <Phone className="w-6 h-6 ml-2" /> اتصل الآن: 0548980056
              </a>
            </div>
         </div>
