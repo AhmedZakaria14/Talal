@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download remaining gallery images locally
+      - name: Download remaining provided images locally
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -41,10 +41,13 @@ jobs:
               print(f'Saved {target} ({len(data)} bytes)')
           PY
 
-      - name: Point gallery to local files only
+      - name: Point homepage gallery and service pages to local assets
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
+
+          # Homepage: replace the last two remote gallery images with local copies.
           p = Path('app/page.tsx')
           s = p.read_text(encoding='utf-8')
           replacements = {
@@ -53,12 +56,33 @@ jobs:
           }
           for old, new in replacements.items():
               if old not in s:
-                  raise RuntimeError(f'Expected source URL not found: {old}')
+                  raise RuntimeError(f'Expected homepage source URL not found: {old}')
               s = s.replace(old, new)
           p.write_text(s, encoding='utf-8')
+
+          # Service pages: keep all written content intact and replace only image src values.
+          service_images = {
+              'app/services/offices-glass/page.tsx': '/assets/talal/offices-glass-26.webp',
+              'app/services/shops-glass/page.tsx': '/assets/talal/shops-glass-2.webp',
+              'app/services/shower-glass/page.tsx': '/assets/talal/glass-securit-19.webp',
+              'app/services/pools-glass/page.tsx': '/assets/talal/pools-glass-2.webp',
+              'app/services/railing-glass/page.tsx': '/assets/talal/railing-glass-19.webp',
+              'app/services/doors-glass/page.tsx': '/assets/talal/shops-glass-2.webp',
+              'app/services/maintenance-glass/page.tsx': '/assets/talal/glass-securit-19.webp',
+          }
+
+          pattern = re.compile(r'src="https://tarkeb-zoogag\.com/wp-content/[^"]+\.webp"')
+          for filename, local_src in service_images.items():
+              path = Path(filename)
+              text = path.read_text(encoding='utf-8')
+              new_text, count = pattern.subn(f'src="{local_src}"', text)
+              if count < 1:
+                  raise RuntimeError(f'No remote service image found in {filename}')
+              path.write_text(new_text, encoding='utf-8')
+              print(f'Updated {filename}: {count} image reference(s)')
           PY
 
-      - name: Verify no Cloudinary or wp-content dependencies remain
+      - name: Verify all site images are self-hosted
         run: |
           if grep -RIn --exclude-dir=.git --exclude='package-lock.json' -E 'res\.cloudinary\.com|cloudinary|/wp-content/' app components lib public next.config.ts 2>/dev/null; then
             echo 'External image dependency still found.'
@@ -80,5 +104,5 @@ jobs:
             echo 'No changes to commit.'
             exit 0
           fi
-          git commit -m 'fix: localize remaining Talal gallery images'
+          git commit -m 'fix: self-host all Talal site images'
           git push
