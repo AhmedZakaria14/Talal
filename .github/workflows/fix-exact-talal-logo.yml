@@ -1,0 +1,46 @@
+name: Fix exact Talal logo
+
+on:
+  push:
+    branches:
+      - localize-talal-assets-20260908
+
+permissions:
+  contents: write
+
+jobs:
+  exact-logo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore exact supplied logo bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .logo-upload/chunk-*.txt > /tmp/talal-logo.b64
+          base64 -d /tmp/talal-logo.b64 > public/assets/talal/logo.webp
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          p = Path('public/assets/talal/logo.webp')
+          b = p.read_bytes()
+          git_sha = hashlib.sha1(f'blob {len(b)}\0'.encode() + b).hexdigest()
+          expected = 'a0cd02e28c555ab9ee09b7a5a688fc648376a117'
+          if git_sha != expected:
+              raise SystemExit(f'Logo byte verification failed: {git_sha} != {expected}')
+          print('Verified exact supplied logo:', git_sha)
+          PY
+          rm -rf .logo-upload
+          rm -f .github/workflows/fix-exact-talal-logo.yml
+      - name: Commit exact logo
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'fix: use exact supplied Talal logo file'
+          git push origin HEAD:localize-talal-assets-20260908
