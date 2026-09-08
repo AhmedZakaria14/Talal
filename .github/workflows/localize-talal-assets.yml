@@ -1,0 +1,151 @@
+name: Localize Talal assets
+
+on:
+  push:
+    branches:
+      - localize-talal-assets-20260908
+
+permissions:
+  contents: write
+
+jobs:
+  localize-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download supplied project photos into the repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p public/assets/talal
+          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' -e 'https://tarkeb-zoogag.com/' 'https://tarkeb-zoogag.com/wp-content/uploads/2024/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%B2%D8%AC%D8%A7%D8%AC-%D8%B3%D9%8A%D9%83%D9%88%D8%B1%D9%8A%D8%AA-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-19.webp' -o public/assets/talal/glass-securit-19.webp
+          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' -e 'https://tarkeb-zoogag.com/' 'https://tarkeb-zoogag.com/wp-content/uploads/2024/08/%D8%A7%D9%81%D8%B6%D9%84-%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D8%B2%D8%AC%D8%A7%D8%AC-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-12.webp' -o public/assets/talal/facades-glass-12.webp
+          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' -e 'https://tarkeb-zoogag.com/' 'https://tarkeb-zoogag.com/wp-content/uploads/2024/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%AF%D8%B1%D8%AC-%D9%88%D8%AF%D8%B1%D8%A7%D8%A8%D8%B2%D9%8A%D9%86-%D8%B2%D8%AC%D8%A7%D8%AC-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-19.webp' -o public/assets/talal/railing-glass-19.webp
+          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' -e 'https://tarkeb-zoogag.com/' 'https://tarkeb-zoogag.com/wp-content/uploads/2024/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%B2%D8%AC%D8%A7%D8%AC-%D9%85%D8%B3%D8%A7%D8%A8%D8%AD-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-2.webp' -o public/assets/talal/pools-glass-2.webp
+          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' -e 'https://tarkeb-zoogag.com/' 'https://tarkeb-zoogag.com/wp-content/uploads/2024/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%85%D8%B1%D8%A7%D9%8A%D8%A7-%D8%B2%D8%AC%D8%A7%D8%AC-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-14.webp' -o public/assets/talal/mirrors-glass-14.webp
+          test -s public/assets/talal/glass-securit-19.webp
+          test -s public/assets/talal/facades-glass-12.webp
+          test -s public/assets/talal/railing-glass-19.webp
+          test -s public/assets/talal/pools-glass-2.webp
+          test -s public/assets/talal/mirrors-glass-14.webp
+
+      - name: Point the site to self-hosted assets and remove Cloudinary
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          from urllib.parse import quote
+
+          repo = Path('.')
+          new_logo_abs = 'https://tarkeb-zoogag.com/assets/talal/logo.webp'
+          old_logos = [
+              'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
+              'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp',
+              'https://tarkeb-zoogag.com/wp-content/uploads/2024/06/logo2-1.png',
+          ]
+
+          source_base = 'https://tarkeb-zoogag.com/wp-content/uploads/2024/08/'
+          photos = {
+              'شركة-تركيب-زجاج-سيكوريت-بالمدينة-المنورة-19.webp': '/assets/talal/glass-securit-19.webp',
+              'افضل-شركة-تركيب-واجهات-زجاج-بالمدينة-المنورة-12.webp': '/assets/talal/facades-glass-12.webp',
+              'شركة-تركيب-درج-ودرابزين-زجاج-بالمدينة-المنورة-19.webp': '/assets/talal/railing-glass-19.webp',
+              'شركة-تركيب-زجاج-مسابح-بالمدينة-المنورة-2.webp': '/assets/talal/pools-glass-2.webp',
+              'شركة-تركيب-مرايا-زجاج-بالمدينة-المنورة-14.webp': '/assets/talal/mirrors-glass-14.webp',
+          }
+
+          allowed_suffixes = {'.ts', '.tsx', '.js', '.jsx', '.mjs', '.json', '.html', '.md', '.css'}
+          excluded_parts = {'.git', 'node_modules', '.next'}
+
+          for path in repo.rglob('*'):
+              if not path.is_file() or path.suffix not in allowed_suffixes:
+                  continue
+              if excluded_parts.intersection(path.parts):
+                  continue
+              try:
+                  text = path.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+              original = text
+              for old in old_logos:
+                  text = text.replace(old, new_logo_abs)
+              for filename, local_path in photos.items():
+                  text = text.replace(source_base + filename, local_path)
+                  text = text.replace(source_base + quote(filename), local_path)
+              if path.as_posix() == 'app/page.tsx':
+                  text = text.replace(
+                      'className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300"',
+                      'className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300 bg-white/95 rounded-xl px-2"'
+                  )
+                  text = text.replace(
+                      'className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md"',
+                      'className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md bg-white/95 rounded-xl px-2"'
+                  )
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+
+          config = Path('next.config.ts')
+          text = config.read_text(encoding='utf-8')
+          cloudinary_pattern = """      {
+                  protocol: 'https',
+                  hostname: 'res.cloudinary.com',
+                  port: '',
+                  pathname: '/**',
+                },
+          """
+          if cloudinary_pattern in text:
+              text = text.replace(cloudinary_pattern, '')
+          else:
+              lines = text.splitlines(True)
+              out = []
+              i = 0
+              while i < len(lines):
+                  if "hostname: 'res.cloudinary.com'" in lines[i]:
+                      start = i
+                      while start > 0 and lines[start].strip() != '{':
+                          start -= 1
+                      end = i
+                      while end < len(lines) and lines[end].strip() != '},':
+                          end += 1
+                      if end < len(lines):
+                          del out[max(0, len(out) - (i - start)):]
+                          i = end + 1
+                          continue
+                  out.append(lines[i])
+                  i += 1
+              text = ''.join(out)
+          config.write_text(text, encoding='utf-8')
+          PY
+
+          rm -f .github/workflows/localize-talal-assets.yml
+
+          if grep -R --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.next -n 'res.cloudinary.com' .; then
+            echo 'Cloudinary references still remain.' >&2
+            exit 1
+          fi
+          if grep -R --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.next -n -E 'logo_ebueow|logo2_zwfsgq|logo2-1\.png' .; then
+            echo 'Old logo references still remain.' >&2
+            exit 1
+          fi
+
+      - name: Verify application build
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci
+          npm run build
+
+      - name: Commit localized assets to staging branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'chore: self-host Talal images and logo'
+          git push origin HEAD:localize-talal-assets-20260908
