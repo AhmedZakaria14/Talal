@@ -25,7 +25,7 @@ export default function ArticlesPage() {
       "name": "مؤسسة عالم الفن والهندسة للزجاج",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://tarkeb-zoogag.com/assets/talal/logo.webp"
+        "url": "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp"
       }
     }
   };

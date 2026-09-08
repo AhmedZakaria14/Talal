@@ -11,8 +11,8 @@ export default function LocalSEO() {
         "url": "https://tarkeb-zoogag.com",
         "telephone": "+966558935165",
         "priceRange": "$$",
-        "image": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
-        "logo": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
+        "image": "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp",
+        "logo": "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "المدينة المنورة",

@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'مؤسسة عالم الفن والهندسة للزجاج',
     images: [
       {
-        url: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+        url: 'https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp',
         width: 1200,
         height: 630,
         alt: 'مؤسسة عالم الفن والهندسة للزجاج - المدينة المنورة',
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'تركيب زجاج سيكوريت بالمدينة المنورة | مؤسسة عالم الفن والهندسة',
     description: 'أفضل شركة تركيب زجاج سيكوريت بالمدينة المنورة. تفصيل واجهات شاورات أبواب ومكاتب بضمان 10 سنوات.',
-    images: ['https://tarkeb-zoogag.com/assets/talal/logo.webp'],
+    images: ['https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp'],
   },
   alternates: {
     canonical: 'https://tarkeb-zoogag.com',
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
-    shortcut: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
-    apple: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   verification: {
     google: 'google-site-verification-code', // Placeholder
@@ -100,8 +100,8 @@ const jsonLd = {
       "url": "https://tarkeb-zoogag.com",
       "telephone": "+966558935165",
       "priceRange": "$$",
-      "image": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
-      "logo": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
+      "image": "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp",
+      "logo": "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "المدينة المنورة",

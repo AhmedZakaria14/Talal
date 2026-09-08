@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       images: [
         {
-          url: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+          url: 'https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp',
           width: 1200,
           height: 630,
           alt: article.title,
@@ -56,7 +56,7 @@ export default async function ArticlePage({ params }: Props) {
   const schema = generateArticleSchema({
     headline: article.title,
     description: article.desc,
-    image: "https://tarkeb-zoogag.com/assets/talal/logo.webp",
+    image: "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp",
     datePublished: currentDate,
     dateModified: currentDate,
     url: `/articles/${resolvedParams.slug}`

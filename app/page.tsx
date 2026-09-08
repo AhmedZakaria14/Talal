@@ -184,11 +184,11 @@ export default function Home() {
             {/* Logo */}
             <a href="#" className="flex-shrink-0 relative z-10 block ml-4">
               <Image 
-                src={isScrolled ? "https://tarkeb-zoogag.com/assets/talal/logo.webp" : "https://tarkeb-zoogag.com/assets/talal/logo.webp"} 
+                src={isScrolled ? "/assets/talal/logo-transparent.webp" : "/assets/talal/logo-transparent.webp"} 
                 alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={220} 
                 height={70} 
-                className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300 bg-white/95 rounded-xl px-2"
+                className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300 "
                 referrerPolicy="no-referrer"
               />
             </a>
@@ -670,11 +670,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
               <Image 
-                src="https://tarkeb-zoogag.com/assets/talal/logo.webp" 
+                src="/assets/talal/logo-transparent.webp" 
                 alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={260} 
                 height={80} 
-                className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md bg-white/95 rounded-xl px-2"
+                className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md "
                 referrerPolicy="no-referrer"
               />
               <p className="text-gray-400 mb-4 leading-relaxed">

@@ -24,7 +24,7 @@ export function generateServiceMetadata({
       type: 'website',
       images: [
         {
-          url: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+          url: 'https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp',
           width: 1200,
           height: 630,
           alt: title,
@@ -35,7 +35,7 @@ export function generateServiceMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://tarkeb-zoogag.com/assets/talal/logo.webp'],
+      images: ['https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp'],
     },
   };
 }
@@ -127,7 +127,7 @@ export function generateArticleSchema({
       name: 'مؤسسة عالم الفن والهندسة للزجاج',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+        url: 'https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp',
       },
     },
     mainEntityOfPage: {

@@ -15,7 +15,7 @@ export default function SultanahPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "مؤسسة عالم الفن والهندسة - تركيب زجاج حي سلطانة",
-    "image": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
+    "image": "https://tarkeb-zoogag.com/assets/talal/logo-transparent.webp",
     "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/sultanah",
     "address": {
