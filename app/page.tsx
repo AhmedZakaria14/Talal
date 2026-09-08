@@ -184,7 +184,7 @@ export default function Home() {
             {/* Logo */}
             <a href="#" className="flex-shrink-0 relative z-10 block ml-4">
               <Image 
-                src={isScrolled ? "/assets/talal/logo-transparent.webp" : "/assets/talal/logo-transparent.webp"} 
+                src={isScrolled ? "/assets/talal/logo.webp" : "/assets/talal/logo-transparent.webp"} 
                 alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={220} 
                 height={70} 
