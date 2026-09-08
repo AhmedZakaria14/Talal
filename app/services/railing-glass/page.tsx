@@ -55,7 +55,7 @@ export default function RailingGlassPage() {
           
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
             <SEOImage 
-              src="https://tarkeb-zoogag.com/wp-content/uploads/2024/09/%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D8%AF%D8%B1%D8%A8%D8%B2%D9%8A%D9%86-%D8%B2%D8%AC%D8%A7%D8%AC-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-2.webp" 
+              src="/assets/talal/railing-glass-19.webp" 
               alt="تركيب دربزين زجاج سيكوريت للسلالم بالمدينة المنورة - مؤسسة عالم الفن والهندسة"
               fill
               className="object-cover"

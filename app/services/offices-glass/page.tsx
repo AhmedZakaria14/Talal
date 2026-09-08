@@ -35,7 +35,7 @@ export default function OfficesGlassPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 items-center">
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1">
             <SEOImage 
-              src="https://tarkeb-zoogag.com/wp-content/uploads/2024/09/%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D8%AC%D8%A7%D8%AC-%D9%84%D9%84%D9%85%D9%83%D8%A7%D8%AA%D8%A8-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.webp" 
+              src="/assets/talal/offices-glass-26.webp" 
               alt="قواطع زجاج مكاتب وزجاج مصنفر بالمدينة المنورة - مؤسسة عالم الفن والهندسة"
               fill
               className="object-cover"

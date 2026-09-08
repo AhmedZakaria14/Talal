@@ -110,8 +110,8 @@ const GALLERY_IMAGES = [
   { id: 1, src: encodeURI("/assets/talal/glass-securit-19.webp"), category: "شاور زجاج" },
   { id: 2, src: encodeURI("/assets/talal/facades-glass-12.webp"), category: "واجهات زجاج" },
   { id: 3, src: encodeURI("/assets/talal/railing-glass-19.webp"), category: "دربزين زجاج" },
-  { id: 4, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-زجاج-سيكوريت-بالمدينة-المنورة-2.webp"), category: "زجاج محلات" },
-  { id: 5, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-زجاج-سيكوريت-بالمدينة-المنورة-26.webp"), category: "زجاج مكاتب" },
+  { id: 4, src: encodeURI("/assets/talal/shops-glass-2.webp"), category: "زجاج محلات" },
+  { id: 5, src: encodeURI("/assets/talal/offices-glass-26.webp"), category: "زجاج مكاتب" },
   { id: 6, src: encodeURI("/assets/talal/pools-glass-2.webp"), category: "زجاج مسابح" },
   { id: 7, src: encodeURI("/assets/talal/mirrors-glass-14.webp"), category: "واجهات زجاج" },
 ];
