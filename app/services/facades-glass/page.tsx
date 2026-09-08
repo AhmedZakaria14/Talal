@@ -35,7 +35,7 @@ export default function FacadesGlassPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 items-center">
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
             <SEOImage 
-              src="https://tarkeb-zoogag.com/wp-content/uploads/2024/08/%D8%A7%D9%81%D8%B6%D9%84-%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A8-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D8%B2%D8%AC%D8%A7%D8%AC-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-12.webp"
+              src="/assets/talal/facades-glass-12.webp"
               alt="تركيب واجهات زجاج سيكوريت للمحلات بالمدينة المنورة - مؤسسة عالم الفن والهندسة"
               fill
               className="object-cover"

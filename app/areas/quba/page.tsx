@@ -15,7 +15,7 @@ export default function QubaPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "مؤسسة عالم الفن والهندسة - تركيب زجاج حي قباء",
-    "image": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
+    "image": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
     "telephone": "+966558935165",
     "url": "https://tarkeb-zoogag.com/areas/quba",
     "address": {

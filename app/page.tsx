@@ -107,13 +107,13 @@ const FEATURES = [
 const GALLERY_CATEGORIES = ["الكل", "شاور زجاج", "واجهات زجاج", "دربزين زجاج", "زجاج محلات", "زجاج مكاتب", "زجاج مسابح"];
 
 const GALLERY_IMAGES = [
-  { id: 1, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-زجاج-سيكوريت-بالمدينة-المنورة-19.webp"), category: "شاور زجاج" },
-  { id: 2, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/افضل-شركة-تركيب-واجهات-زجاج-بالمدينة-المنورة-12.webp"), category: "واجهات زجاج" },
-  { id: 3, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-درج-ودرابزين-زجاج-بالمدينة-المنورة-19.webp"), category: "دربزين زجاج" },
+  { id: 1, src: encodeURI("/assets/talal/glass-securit-19.webp"), category: "شاور زجاج" },
+  { id: 2, src: encodeURI("/assets/talal/facades-glass-12.webp"), category: "واجهات زجاج" },
+  { id: 3, src: encodeURI("/assets/talal/railing-glass-19.webp"), category: "دربزين زجاج" },
   { id: 4, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-زجاج-سيكوريت-بالمدينة-المنورة-2.webp"), category: "زجاج محلات" },
   { id: 5, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-زجاج-سيكوريت-بالمدينة-المنورة-26.webp"), category: "زجاج مكاتب" },
-  { id: 6, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-زجاج-مسابح-بالمدينة-المنورة-2.webp"), category: "زجاج مسابح" },
-  { id: 7, src: encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/شركة-تركيب-مرايا-زجاج-بالمدينة-المنورة-14.webp"), category: "واجهات زجاج" },
+  { id: 6, src: encodeURI("/assets/talal/pools-glass-2.webp"), category: "زجاج مسابح" },
+  { id: 7, src: encodeURI("/assets/talal/mirrors-glass-14.webp"), category: "واجهات زجاج" },
 ];
 
 const COVERAGE = [
@@ -184,11 +184,11 @@ export default function Home() {
             {/* Logo */}
             <a href="#" className="flex-shrink-0 relative z-10 block ml-4">
               <Image 
-                src={isScrolled ? "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp" : "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp"} 
+                src={isScrolled ? "https://tarkeb-zoogag.com/assets/talal/logo.webp" : "https://tarkeb-zoogag.com/assets/talal/logo.webp"} 
                 alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={220} 
                 height={70} 
-                className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300"
+                className="h-14 sm:h-16 lg:h-20 w-auto object-contain drop-shadow-md transition-all duration-300 bg-white/95 rounded-xl px-2"
                 referrerPolicy="no-referrer"
               />
             </a>
@@ -557,7 +557,7 @@ export default function Home() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative h-[400px] lg:h-[500px]">
                <div className="absolute inset-0 bg-[#0a1628]/5 rounded-3xl transform rotate-3"></div>
-               <Image src={encodeURI("https://tarkeb-zoogag.com/wp-content/uploads/2024/08/افضل-شركة-تركيب-واجهات-زجاج-بالمدينة-المنورة-12.webp")} alt="فريق عالم الفن والهندسة" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover rounded-3xl shadow-xl z-10" referrerPolicy="no-referrer" />
+               <Image src={encodeURI("/assets/talal/facades-glass-12.webp")} alt="فريق عالم الفن والهندسة" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover rounded-3xl shadow-xl z-10" referrerPolicy="no-referrer" />
                <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-2xl z-20 flex items-center gap-4">
                   <div className="w-12 h-12 bg-[#c9a84c] rounded-full flex items-center justify-center">
                     <Star className="w-6 h-6 text-white" />
@@ -670,11 +670,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
               <Image 
-                src="https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp" 
+                src="https://tarkeb-zoogag.com/assets/talal/logo.webp" 
                 alt="مؤسسة عالم الفن والهندسة للزجاج" 
                 width={260} 
                 height={80} 
-                className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md"
+                className="h-16 sm:h-20 w-auto object-contain mb-6 drop-shadow-md bg-white/95 rounded-xl px-2"
                 referrerPolicy="no-referrer"
               />
               <p className="text-gray-400 mb-4 leading-relaxed">
