@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'مؤسسة عالم الفن والهندسة للزجاج',
     images: [
       {
-        url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
+        url: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
         width: 1200,
         height: 630,
         alt: 'مؤسسة عالم الفن والهندسة للزجاج - المدينة المنورة',
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'تركيب زجاج سيكوريت بالمدينة المنورة | مؤسسة عالم الفن والهندسة',
     description: 'أفضل شركة تركيب زجاج سيكوريت بالمدينة المنورة. تفصيل واجهات شاورات أبواب ومكاتب بضمان 10 سنوات.',
-    images: ['https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp'],
+    images: ['https://tarkeb-zoogag.com/assets/talal/logo.webp'],
   },
   alternates: {
     canonical: 'https://tarkeb-zoogag.com',
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
-    shortcut: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
-    apple: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
+    icon: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+    shortcut: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
+    apple: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
   },
   verification: {
     google: 'google-site-verification-code', // Placeholder
@@ -100,8 +100,8 @@ const jsonLd = {
       "url": "https://tarkeb-zoogag.com",
       "telephone": "+966558935165",
       "priceRange": "$$",
-      "image": "https://tarkeb-zoogag.com/wp-content/uploads/2024/06/logo2-1.png",
-      "logo": "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229452/logo2_zwfsgq.webp",
+      "image": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
+      "logo": "https://tarkeb-zoogag.com/assets/talal/logo.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "المدينة المنورة",

@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       images: [
         {
-          url: 'https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp',
+          url: 'https://tarkeb-zoogag.com/assets/talal/logo.webp',
           width: 1200,
           height: 630,
           alt: article.title,
@@ -56,7 +56,7 @@ export default async function ArticlePage({ params }: Props) {
   const schema = generateArticleSchema({
     headline: article.title,
     description: article.desc,
-    image: "https://res.cloudinary.com/dxvjqrb9l/image/upload/v1779229726/logo_ebueow.webp",
+    image: "https://tarkeb-zoogag.com/assets/talal/logo.webp",
     datePublished: currentDate,
     dateModified: currentDate,
     url: `/articles/${resolvedParams.slug}`
